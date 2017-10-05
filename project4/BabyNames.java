@@ -74,7 +74,7 @@ public class BabyNames {
 		}
 
 	}
-			
+	
 	/** Reads data files and stores data in memory.
 	 * @return dataset organized in list of YearNames objects
 	 */
@@ -87,7 +87,7 @@ public class BabyNames {
 		for (int elapsedYears = 0; elapsedYears < numberOfYears; elapsedYears++) {
 			int currentYear = elapsedYears + baseYear;
 			//test if file reads
-			String fileName = "data/yob" + currentYear + ".txt";
+			String fileName = "project4/data/yob" + currentYear + ".txt";
 			File f = new File(fileName);
 			if (!f.canRead()) {
 				System.err.printf("Error: cannot read " + "data from file %s", fileName);

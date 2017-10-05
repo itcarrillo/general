@@ -32,7 +32,7 @@ public class PopularWords {
 		
 		//	gather first two arguments and create file object
 		try {
-			file = new File(args[0]);
+			file = new File("project5/" + args[0]);
 			order = args[1].toLowerCase();
 			if (!(order.equals("name") || order.equals("frequency") || order.equals("scarcity"))) {
 				System.err.println("Second argument must be 'name', 'frequency' or 'scarcity'");
